@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.left-menu {
+  background-color: #000;
+  width: 80px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.left-menu:hover {
+  width: 250px;
+}
+
+.admin-logo {
+  width: 250px;
+  height: 70px;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 20px;
+}
+
+.admin-logo img {
+  height: 100%;
+}
+
+.left-nav li {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  border-bottom: 1px solid #fff;
+}
+
+.left-nav li:last-child {
+  border: none;
+}
+
+.left-nav li:hover {
+  background-color: #232B33;
+}
+
+.left-nav li a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  margin: 15px 0;
+  padding: 0 20px;
+  height: 20px;
+}

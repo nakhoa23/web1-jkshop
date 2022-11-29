@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JKSHOP</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style_content.css">
+  <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/css/all.min.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header">
+    <!-- Header Left -->
+    <!-- Navigation -->
+    <ul class="nav">
+      <li><a onclick="showProduct();">Trang chủ</a></li>
+      <li id="buttonAo"><a>Áo nam</a></li>
+      <li id="buttonQuan"><a>Quần nam</a></li>
+      <li><a href="">Liên hệ</a></li>
+    </ul>
+    <!-- Header Center -->
+    <div class="header-img">
+      <a href="index.html" class="logo-link">
+        <img src="./img/logo-jkshop.png" alt="" class="logo-img" />
+      </a>
+    </div>
+    <!-- Header Right -->
+    <div class="header-icon">
+      <div id="showUser">
+
+      </div>
+      <div id="login-logout-icon">
+        <!-- <a href="#" class="header-icon-link" onclick="showFormLogin()"> -->
+        <i class="header-icon-link fa-solid fa-user" id="login-icon" onclick="showFormLogin()"></i>
+
+        <!-- <i class="header-icon-link fa-solid fa-right-from-bracket" id="logout-icon" onclick="logout()"></i> -->
+      </div>
+
+
+      <a class="header-icon-link" onclick="showcart()">
+        <i class="fa-solid fa-cart-shopping"></i>
+      </a>
+      <!-- Search -->
+      <div class="searchBar">
+        <input type="text" placeholder="Nhập tên sản phẩm">
+        <div id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></div>
+      </div>
+      <div onclick="openFilter();" class="filter_click" id="filter_click"><i class="fa-solid fa-filter"></i>Lọc</div>
+      <div class="closeFilter" onclick="closeFilter()" id="filterClose"><i class="fa-solid fa-circle-xmark"></i></div>
+      <div class="filter" id="filterProduct">
+        <label for="price1">Từ</label>
+        <input type="text" id="pr1">
+        <label for="price2">Tới</label>
+        <input type="text" id="pr2">
+        <i class="fa-solid fa-magnifying-glass" onclick="filterProduct()"></i>
+      </div>
+
+  </header>
+
+  <!-- Slider -->
+  <div id="slider">
+    <div class="slider-container">
+      <img src="img/slider.jpg" alt="" id="slider-img" />
+      <div class="control prev">
+        <i class="fa-solid fa-chevron-left" onclick="sliderPrev();"></i>
+      </div>
+      <div class="control next">
+        <i class="fa-solid fa-chevron-right" onclick="sliderNext();"></i>
+      </div>
+      <ul class="slider-bottom">
+        <li class="slider-dot-1" id="sl-dot1" onclick="sliderButtom1()"></li>
+        <li class="slider-dot-2" id="sl-dot2" onclick="sliderButtom2()"></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Form Dang Ki -->
+  <div class="signup" id="signup">
+    <div class="signup-container">
+      <a href="#" class="signup-close" onclick="closeFormSignup()"><i class="fa-solid fa-xmark"></i></a>
+      <h2 class="signup-header">Đăng ký</h2>
+      <form action="" onsubmit="signup();" id="signup-form">
+        <label for="username" class="signup-lable">Tên đăng nhập</label>
+        <input type="text" name="" id="username" class="signup-input" placeholder="Tên đăng nhập" />
+
+        <label for="password" class="signup-lable">Mật khẩu</label>
+        <div class="show-password">
+          <input type="password" name="" id="password" class="signup-input" placeholder="Mật khẩu" />
+          <i class="fa-solid fa-eye" id="btn-show-password-signup" onclick="showPassWordSignUp()"></i>
+          <i class="fa-solid fa-eye-slash" id="btn-hide-password-signup" onclick="showPassWordSignUp()"></i>
+        </div>
+        <label for="comfirm-password" class="signup-lable">Nhập lại mật khẩu</label>
+        <div class="show-password">
+          <input type="password" name="" id="comfirm-password" class="signup-input" placeholder="Nhập lại mật khẩu" />
+          <i class="fa-solid fa-eye" id="btn-show-cp-login" onclick="showCPSignUp()"></i>
+          <i class="fa-solid fa-eye-slash" id="btn-hide-cp-login" onclick="showCPSignUp()"></i>
+        </div>
+        <button type="submit" class="signup-button">Đăng ký</button>
+      </form>
+      <div class="signup-already">
+        <span>Bạn đã có tài khoản ?</span>
+        <a href="" class="signup-link" onclick="showFormLogin()">Đăng nhập</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Form Dang Nhap -->
+  <div class="login" id="login">
+    <div class="login-container">
+      <a href="#" class="login-close" onclick="closeFormLogin()"><i class="fa-solid fa-xmark"></i></a>
+      <h2 class="login-header">Đăng nhập</h2>
+      <form action="" onsubmit="login()">
+        <label for="username" class="login-lable">Tên đăng nhập</label>
+        <input type="text" name="" id="login-username" class="login-input" placeholder="Tên đăng nhập" />
+        <label for="password" class="login-lable">Mật khẩu </label>
+        <div class="show-password">
+          <input type="password" name="" id="login-password" class="login-input" placeholder="Mật khẩu" />
+          <i class="fa-solid fa-eye" id="btn-show-password-login" onclick="showPassWordLogin()"></i>
+          <i class="fa-solid fa-eye-slash" id="btn-hide-password-login" onclick="showPassWordLogin()"></i>
+        </div>
+        <button type="submit" class="login-button">Đăng nhập</button>
+      </form>
+      <div class="login-already">
+        <span>Bạn chưa có tài khoản ?</span>
+        <a href="" class="login-link" onclick="showFormSignUp()">Đăng ký</a>
+      </div>
+    </div>
+  </div>
+  <!-- TRƯỜNG -->
+  <!-- gio hang -->
+  <div class="cart" id="cart">
+    <div class="login-container-cart">
+      <a href="#" class="login-close" onclick="closeFormcart()"><i class="fa-solid fa-xmark"></i></a>
+      <div class="login-header">
+        <h2 class="gio" id="gio">giỏ hàng</h2>
+        <div class="container-cart-heading">
+          <div class="hinhgio font-24"></div>
+          <div class="name font-24">Tên</div>
+          <div class="gia font-24">Giá</div>
+          <div class="soluong font-24">Số Lượng</div>
+          <div class="giacuoi font-24">Giá Cuối</div>
+          <div class="size font-24">Size</div>
+          <div class="tg"></div>
+        </div>
+        <div id="inner" class="inner"></div>
+        <div class="mua"><button class="btn-buy" onclick="muahang()">MUA HÀNG</button></div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- mua hàng -->
+  <div class="cart" id="muahang">
+    <div class="login-container-cart">
+      <a href="#" class="login-close" onclick="closeFormmuahang()"><i class="fa-solid fa-xmark"></i></a>
+      <h2 class="login-header">
+        <div id="inerhoantat">
+          <div class="gio" id="gio">Thông Tin Mua Hàng</div>
+          <div class="ipmh">
+            <div class="mhleft">Nhập Tên</div>
+            <input type="text" id="fullname" placeholder="Nhập họ và tên">
+          </div>
+          <div class="ipmh">
+            <div class="mhleft">Nhập Địa Chỉ</div>
+            <input type="text" id="dc" placeholder="Nhập địa chỉ giao hàng">
+          </div>
+          <div class="ipmh">
+            <div class="mhleft">Nhập Số Điện Thoại</div>
+            <input type="tel" id="sdt" placeholder="Nhập số điện thoại" pattern="[0-9]{10}">
+          </div>
+          <div class="mua"><button class="btn-buy" onclick="hoantat()">HOÀN TẤT</button></div>
+        </div>
+      </h2>
+    </div>
+  </div>
+
+  <div class="cart" id="hoantat">
+    <div class="login-container-cart">
+      <a href="#" class="login-close  close__cart" onclick="closeFormhoantat()"><i class="fa-solid fa-xmark"></i></a>
+      <h2 class="login-header buy-done">
+        <div>MUA HÀNG THÀNH CÔNG </div>
+      </h2>
+    </div>
+  </div>
+  <!-- TRƯỜNG -->
+
+  <!-- Hien thi chi tiet san pham -->
+  <div class="product-container" id="product-container">
+    <!-- <div class="l-product-container">
+      <img src="./ao_so_mi/ao_so_mi_AD_1.jpg" alt="">
+    </div>
+    <div class="r-product-container">
+      <div class="name-product">Ao lalalalalal</div>
+      <span class="price-product"><span>Giá: </span>1000</span>
+      <span>Số lượng</span>
+      <div class="input-product">
+        <button class="btn-product">-</button>
+        <input type="number" name="" id="number-product" min="1" value="1">
+        <button class="btn-product">+</button>
+      </div>
+      <button class="bnt-add-item" onclick="addItemToCart(\'' + item.productId + '\')">Thêm vào giỏ</button>
+    </div>
+    <a href="#" class="close-display-cart" onclick="close_display_cart()"><i class="fa-solid fa-xmark"></i></a> -->
+  </div>
+  <!-- Content -->
+  <div class="content">
+    <div id="title"></div>
+    <img src="" alt="">
+    <div class="container" id="product"></div>
+    <ul id="numb" class="wrapper"></ul>
+  </div>
+
+  <!-- Footer -->
+  <div class="header1" id="idheader1">
+    <div class="headcon">
+      <div class="footer-icon"><i class="fa-solid fa-clock"></i></div>
+      <div class="footer-text-line1">6 NGÀY ĐỔI SẢN PHẨM</div>
+      <div class="footer-text">Đổi trả sản phẩm trong 6 ngày</div>
+    </div>
+    <div class="headcon">
+      <div class="footer-icon"><i class="fa-sharp fa-solid fa-user"></i></div>
+      <div class="footer-text-line1">HOTLINE 10000</div>
+      <div class="footer-text">8h-20h|T2-T6</div>
+    </div>
+    <div class="headcon">
+      <div class="footer-icon"><i class="fa-sharp fa-solid fa-shop"></i></div>
+      <div class="footer-text-line1">HỆ THỐNG CỬA HÀNG </div>
+      <div class="footer-text">Gần 60 cửa hàng trên hệ thống</div>
+    </div>
+    <div class="headcon">
+      <div class="footer-icon"><i class="fa-sharp fa-solid fa-truck"></i></div>
+      <div class="footer-text-line1">VẬN CHUYỂN</div>
+      <div class="footer-text">Đồng giá 1.000.000đ</div>
+    </div>
+  </div>
+  <div class="bottom" id="idbottom">
+    <div class="bottomcon">
+      <div class="footer-text-line1"><b>JK SHOP</b></div>
+      <div class="footer-text">SANG TRỌNG</div>
+      <div class="footer-text">Ở MỨC GIÁ TẦM TRUNG</div>
+    </div>
+    <div class="bottomcon">
+      <div class="footer-text-line1"><b>HỖ TRỢ KHÁCH HÀNG</b></div>
+      <div class="footer-text">CHÍNH SÁCH VẬN CHUYỂN</div>
+      <div class="footer-text">CHÍNH SÁCH ĐỔI TRẢ</div>
+      <div class="footer-text">PHƯƠNG THỨC THANH TOÁN</div>
+    </div>
+    <div class="bottomcon">
+      <div class="footer-text-line1"><b>SOCIAL NETWORK</b></div>
+      <div>
+        <a href="" class="footer-icon f-last"><i class="fa-brands fa-facebook"></i></a>
+        <a href="" class="footer-icon f-last"><i class="fa-brands fa-instagram"></i></a>
+        <a href="" class="footer-icon f-last"><i class="fa-brands fa-tiktok"></i></a>
+
+      </div>
+    </div>
+  </div>
+  <div class="end">@2022 JK SHOP</div>
+  <script src="slider.js"></script>
+  <script src="login.js"></script>
+  <script src="./content.js"></script>
+  <div></div>
+  <script>
+    window.onload = function() {
+      createDefaut();
+      createProduct();
+      showProduct();
+      showUserInHeader();
+      ShowlogoutIcon();
+      input_item();
+    }
+  </script>
+</body>
+
+</html>

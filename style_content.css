@@ -1,0 +1,144 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+
+/* body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} */
+
+.content .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#title {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+.content .container .box img {
+  object-fit: cover;
+  width: 300px;
+  height: auto;
+}
+
+.content .container .box {
+  padding: 10px;
+  background-color: whitesmoke;
+  box-shadow: 0 0.5px 1px rgba(0, 0, 0, .3);
+  text-align: center;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.content .wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  padding: 5px;
+}
+
+.wrapper li {
+  list-style: none;
+  margin: 10px;
+  cursor: pointer;
+  border: 2px ridge black;
+  border-radius: 5px;
+  padding: 12px;
+}
+
+.btn:hover {
+  background-color: brown;
+}
+
+.btn:active {
+  background-color: brown;
+  transform: translateY(4px);
+}
+
+.price {
+  font-size: large;
+}
+
+.button {
+  background-color: palevioletred;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.container-chart {
+  margin-top: 200px;
+  float: right;
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-chart .chartAll {
+  border-radius: 15px;
+  width: 300px;
+  height: 200px;
+  background-color: aqua;
+}
+
+.container-chart .chartAo {
+  border-radius: 15px;
+  width: 300px;
+  height: 200px;
+  background-color: mediumorchid
+}
+
+.container-chart .chartQuan {
+  border-radius: 15px;
+  width: 300px;
+  height: 200px;
+  background-color: mediumpurple;
+}
+
+.container-chart .doanhThu {
+  border-radius: 15px;
+  width: 300px;
+  height: 200px;
+  background-color: mediumspringgreen;
+}
+
+.count,
+.title {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.title {
+  margin-top: 10px;
+}
+
+.cost {
+  font-size: 30px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.item__name,
+.price {
+  font-size: 20px;
+  margin-top: 5px;
+}

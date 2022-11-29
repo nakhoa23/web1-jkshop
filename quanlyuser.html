@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quản lý user</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/css/all.min.css">
+  <script src="login.js"></script>
+  <link rel="stylesheet" href="quanlykhachhang.css">
+  <link rel="stylesheet" href="style_content.css">
+  <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+  <script>
+    window.onload = function() {
+      showUserList();
+    }
+  </script>
+  <div class="left-menu">
+    <div class="admin-logo">
+      <img src="./img/logo-jkshop.png" alt="">
+    </div>
+    <ul class="left-nav">
+      <li>
+        <a href="index.html"><i class="fa-solid fa-house admin-icon"></i></a>
+        <a href="index.html">Trang chủ</a>
+      </li>
+      <li>
+        <a href="quan_ly_san_pham.html"><i class="fa-solid fa-shirt admin-icon"></i></a>
+        <a href="quan_ly_san_pham.html">Sản phẩm</a>
+      </li>
+      <li>
+        <a href="quan_ly_don_hang.html"><i class="fa-solid fa-truck admin-icon"></i></a>
+        <a href="quan_ly_don_hang.html">Đơn hàng</a>
+      </li>
+      <li>
+        <a href="quanlyuser.html"><i class="fa-solid fa-users admin-icon"></i></a>
+        <a href="quanlyuser.html">Khách hàng</a>
+      </li>
+      <li>
+        <a href="chart.html"><i class="fa-solid fa-map-location admin-icon"></i></a>
+        <a href="chart.html">Thông Tin</a>
+      </li>
+    </ul>
+  </div>
+  <div class="container">
+    <table id="user-list">
+      <!-- <tr>
+      <th class="tb-user">STT</th>
+      <th class="tb-user">Tên đăng nhập</th>
+      <th class="tb-user">Mật khẩu</th>
+      <th class="tb-user">Loại tài khoản</th>
+      <th class="tb-user">Xóa tài khoản</th>
+    </tr>
+    <tr class="table-user">
+    <td class="tb-user">1</td>
+    <td class="tb-user">username</td>
+    <td class="tb-user">password</td>
+    <td class="tb-user">type</td>
+    <td class="tb-user"><button>&times;</button></td>
+  </tr> -->
+    </table>
+    <button class="btn-add-user" onclick="createnewuser();">Thêm mới user</button>
+    <input type="text" value="" name="txtuser" id="user" class="adduser-input" placeholder="Tên đăng nhập" />
+    <input type="text" value="" name="txtpass" id="pass" class="adduser-input" placeholder="Mật khẩu" />
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quan Ly San Pham</title>
+  <link rel="stylesheet" href="./style_content.css">
+  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/css/all.min.css">
+  <style>
+    html {
+      background-color: mintcream;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .render td {
+      padding: 5px;
+      text-align: center;
+    }
+    
+    .update {
+      background-color: lightblue;
+      width: 30%;
+      margin: 0 auto;
+    }
+    
+    .update td {
+      padding: 5px;
+    }
+    
+    img {
+      height: 50px;
+    }
+    
+    h2 {
+      margin-left: 10px;
+    }
+    
+    .update input {
+      padding-left: 5px;
+      width: 350px;
+      border-top-style: hidden;
+      border-right-style: hidden;
+      border-left-style: hidden;
+      border-bottom-style: groove;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="left-menu">
+    <div class="admin-logo">
+      <img src="./img/logo-jkshop.png" alt="">
+    </div>
+    <ul class="left-nav">
+      <li>
+        <a href="index.html"><i class="fa-solid fa-house admin-icon"></i></a>
+        <a href="index.html">Trang chủ</a>
+      </li>
+      <li>
+        <a href="quan_ly_san_pham.html"><i class="fa-solid fa-shirt admin-icon"></i></a>
+        <a href="quan_ly_san_pham.html">Sản phẩm</a>
+      </li>
+      <li>
+        <a href="quan_ly_don_hang.html"><i class="fa-solid fa-truck admin-icon"></i></a>
+        <a href="quan_ly_don_hang.html">Đơn hàng</a>
+      </li>
+      <li>
+        <a href="quanlyuser.html"><i class="fa-solid fa-users admin-icon"></i></a>
+        <a href="quanlyuser.html">Khách hàng</a>
+      </li>
+      <li>
+        <a href="chart.html"><i class="fa-solid fa-map-location admin-icon"></i></a>
+        <a href="chart.html">Thông Tin</a>
+      </li>
+    </ul>
+  </div>
+  <div style="width: 94%; float: right;">
+    <div class="update">
+      <h2>Thêm/ Sửa Sản Phẩm</h2>
+      <table>
+        <tr>
+          <td>Tên sản phẩm</td>
+          <td><input required type="text" placeholder="nhập tên sản phẩm" id="name"></td>
+        </tr>
+        <tr>
+          <td>Link ảnh</td>
+          <td><input type="text" placeholder="link ảnh" id="img"></td>
+        </tr>
+        <tr>
+          <td>Giá tiền</td>
+          <td><input type="text" placeholder="nhập giá tiền" id="price"></td>
+        </tr>
+        <tr>
+          <td>Thương hiệu</td>
+          <td><input type="text" placeholder="nhập thương hiệu" id="brand"></td>
+        </tr>
+        <tr>
+          <td>Loại</td>
+          <td><input type="text" placeholder="nhập thể loại" id="type"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <div class="button" id="add" onclick="createnewproduct();">Thêm Sản Phẩm</div>
+            <div class="button" id="update" onclick="changeProduct();" style="display: none;">Sửa Sản Phẩm</div><input type="hidden" id="index"></td>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="render">
+      <table id="show_product" width="100%"></table>
+    </div>
+    <div class="content">
+      <ul id="numb" class="wrapper"></ul>
+    </div>
+  </div>
+  <script src="./manage.js"></script>
+  <script>
+    window.onload = function() {
+      renderAll();
+    }
+  </script>
+</body>
+
+</html>
