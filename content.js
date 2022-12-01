@@ -1,7 +1,7 @@
 var p = 'product';
 
 let currentPage = 1; //trang hien tai
-let perPage = 16; //so san pham cua 1 trang
+let perPage = 15; //so san pham cua 1 trang
 let start = 0;
 let end = perPage;
 let productArray = JSON.parse(localStorage.getItem('product'));
