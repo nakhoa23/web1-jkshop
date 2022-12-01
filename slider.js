@@ -3,12 +3,20 @@ var sliderArray = ["img/slider.jpg", "img/slider2.jpg"];
 
 // Slider tự thay đổi
 var sliderRandomImg;
-
+var slider_index = 0; // index của mảng chứa slider
 function changeImgSlider() {
   var i = Math.round(Math.random() * 1); // ramdom trong khoảng từ 0 đến 1
   var sliderImg = document.getElementById("slider-img");
   sliderImg.src = sliderArray[i];
-  sliderRandomImg = setTimeout("changeImgSlider()", 1000);
+  slider_index = i;
+  if (slider_index == 0) {
+    document.getElementById("sl-dot1").style.opacity = "unset";
+    document.getElementById("sl-dot2").style.opacity = "0.3";
+  } else {
+    document.getElementById("sl-dot2").style.opacity = "unset";
+    document.getElementById("sl-dot1").style.opacity = "0.3";
+  }
+  sliderRandomImg = setTimeout("changeImgSlider()", 3000);
 }
 
 // // Khi vừa mở trình duyệt thì gọi hàm changeImgSlider
@@ -17,7 +25,7 @@ function changeImgSlider() {
 // };
 
 // Chuyển trang trên slider
-var slider_index = 0; // index của mảng chứa slider
+
 // Lùi slider
 function sliderPrev() {
   slider_index--;

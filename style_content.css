@@ -13,22 +13,25 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 #title {
   text-align: center;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
   padding: 10px;
   margin-top: 10px;
-  font-size: 30px;
+  font-size: 1.5em;
   letter-spacing: 1.5px;
+  font-weight: bold;
 }
 
 .title-product {
-  font-size: 30px;
+  font-size: 1.5em;
   font-weight: normal;
   letter-spacing: 1.5px;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif !important;
 }
 
 .content .container .box img {

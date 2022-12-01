@@ -22,40 +22,40 @@ function createProduct() {
       { productId: 1010, brand: 'MB', img: './ao_so_mi/ao_so_mi_MB_4.jpg', name: 'Áo Sơ Mi MB (sọc)', price: 190000, type: 'ao' },
       { productId: 1011, brand: 'MB', img: './ao_so_mi/ao_so_mi_MB_5.jpg', name: 'Áo Sơ Mi MB (0308)', price: 310000, type: 'ao' },
       // tu day
-      { productId: 1012, brand: 'DE', img: './ao/ao_de.jpg', name: 'Áo Thun DE ( Regular fit )', price: 300000, type: 'ao' },
+      { productId: 1012, brand: 'DE', img: './ao/ao_de.jpg', name: 'Áo Thun DE (Regular fit)', price: 300000, type: 'ao' },
       { productId: 1013, brand: 'MR', img: './ao/ao_mr.jpg', name: 'Áo Thun ngắn tay MR', price: 180000, type: 'ao' },
-      { productId: 1014, brand: 'OxOliver', img: './ao/ao_sweat.jpg', name: 'Áo Sweatshirt OxOliver ( Camping )', price: 460000, type: 'ao' },
+      { productId: 1014, brand: 'OxOliver', img: './ao/ao_sweat.jpg', name: 'Áo Sweatshirt OxOliver (Camping)', price: 460000, type: 'ao' },
       { productId: 1015, brand: 'SP', img: './ao/ao_sp.jpg', name: 'Áo Thun SP', price: 280000, type: 'ao' },
       { productId: 1016, brand: 'BSH', img: './ao/ao_bsh.jpg', name: 'Áo Polo BSH', price: 300000, type: 'ao' },
       { productId: 1017, brand: 'NEWB', img: './ao/ao_newb.jpg', name: 'ÁO Thun NEWB', price: 380000, type: 'ao' },
       { productId: 1018, brand: 'NB', img: './ao/ao_nb.jpg', name: 'ÁO Khoác NB', price: 680000, type: 'ao' },
       { productId: 1019, brand: 'NewB', img: './ao/ao_newb1.jpg', name: 'ÁO Hoodie NewB', price: 680000, type: 'ao' },
       { productId: 1020, brand: 'ZZ', img: './ao/ao_zz.jpg', name: 'Áo thun ZZ', price: 680000, type: 'ao' },
-      { productId: 1021, brand: 'MB', img: './ao/ao_mb.jpg', name: 'Áo Thun MB Pocket ( Semi-Overfit )', price: 300000, type: 'ao' },
-      { productId: 1022, brand: 'MB', img: './ao/ao_mb1.jpg', name: 'Áo thun MB ( Fake Smile )', price: 300000, type: 'ao' },
-      { productId: 1023, brand: 'MSS', img: './quan/quan_mss.jpg', name: 'Quần Tây MSS ( Tapered Crop )', price: 380000, type: 'quan' },
-      { productId: 1024, brand: 'TKC', img: './quan/quan_tkc.jpg', name: 'Quần Tây TKC ( Slim Fit )', price: 400000, type: 'quan' },
-      { productId: 1025, brand: 'SP', img: './quan/quan_sp.jpg', name: 'Quần Jeans SP Straight Fit ( 25c41 )', price: 420000, type: 'quan' },
-      { productId: 1026, brand: 'SP', img: './quan/quan_sp1.jpg', name: 'Quần jean SP ( Tapered Fit )', price: 420000, type: 'quan' },
-      { productId: 1027, brand: 'MEM', img: './quan/quan_mem.jpg', name: 'Quần Tây MEM ( Slim Fit )', price: 400000, type: 'quan' },
-      { productId: 1028, brand: 'GE', img: './quan/quan_ge.jpg', name: 'Quần Jogger GE ( Cargo Pants )', price: 380000, type: 'quan' },
-      { productId: 1029, brand: 'NII', img: './quan/quan_nii2.jpg', name: 'Quần Tây NII ( Two-Tuck Wide Fit )', price: 380000, type: 'quan' },
-      { productId: 1030, brand: 'PM', img: './quan/quan_pm.jpg', name: 'Quần Linen PM ( Tapered )', price: 380000, type: 'quan' },
-      { productId: 1031, brand: 'DF', img: './quan/quan_df.jpg', name: 'Quần Tây DF Premium ( Wide Slacks )', price: 420000, type: 'quan' },
+      { productId: 1021, brand: 'MB', img: './ao/ao_mb.jpg', name: 'Áo Thun MB Pocket (Semi-Overfit)', price: 300000, type: 'ao' },
+      { productId: 1022, brand: 'MB', img: './ao/ao_mb1.jpg', name: 'Áo thun MB (Fake Smile)', price: 300000, type: 'ao' },
+      { productId: 1023, brand: 'MSS', img: './quan/quan_mss.jpg', name: 'Quần Tây MSS (Tapered Crop)', price: 380000, type: 'quan' },
+      { productId: 1024, brand: 'TKC', img: './quan/quan_tkc.jpg', name: 'Quần Tây TKC (Slim Fit)', price: 400000, type: 'quan' },
+      { productId: 1025, brand: 'SP', img: './quan/quan_sp.jpg', name: 'Quần Jeans SP Straight Fit (25c41)', price: 420000, type: 'quan' },
+      { productId: 1026, brand: 'SP', img: './quan/quan_sp1.jpg', name: 'Quần jean SP (Tapered Fit)', price: 420000, type: 'quan' },
+      { productId: 1027, brand: 'MEM', img: './quan/quan_mem.jpg', name: 'Quần Tây MEM (Slim Fit)', price: 400000, type: 'quan' },
+      { productId: 1028, brand: 'GE', img: './quan/quan_ge.jpg', name: 'Quần Jogger GE (Cargo Pants)', price: 380000, type: 'quan' },
+      { productId: 1029, brand: 'NII', img: './quan/quan_nii2.jpg', name: 'Quần Tây NII (Two-Tuck Wide Fit)', price: 380000, type: 'quan' },
+      { productId: 1030, brand: 'PM', img: './quan/quan_pm.jpg', name: 'Quần Linen PM (Tapered)', price: 380000, type: 'quan' },
+      { productId: 1031, brand: 'DF', img: './quan/quan_df.jpg', name: 'Quần Tây DF Premium (Wide Slacks)', price: 420000, type: 'quan' },
       { productId: 1032, brand: 'NII', img: './quan/quan_nii1.jpg', name: 'Quần Tây NII Wide Fit', price: 380000, type: 'quan' },
-      { productId: 1033, brand: 'AD', img: './quan/quan_ad.jpg', name: 'Quần Short AD ( poly )', price: 280000, type: 'quan' },
+      { productId: 1033, brand: 'AD', img: './quan/quan_ad.jpg', name: 'Quần Short AD (poly)', price: 280000, type: 'quan' },
       { productId: 1034, brand: 'WAU', img: './quan/quan_wau.jpg', name: 'Quần Short WAU', price: 280000, type: 'quan' },
-      { productId: 1035, brand: 'PM', img: './quan/quan_pm1.jpg', name: 'Quần Linen PM ( Half Banding )', price: 350000, type: 'quan' },
-      { productId: 1036, brand: 'NI', img: './quan/quan_ni.jpg', name: 'Quần Kaki NI ( Slim Tapered )', price: 350000, type: 'quan' },
-      { productId: 1037, brand: 'PM', img: './quan/quan_pm2.jpg', name: 'Quần Tây PM ( Crop Tapered )', price: 350000, type: 'quan' },
+      { productId: 1035, brand: 'PM', img: './quan/quan_pm1.jpg', name: 'Quần Linen PM (Half Banding)', price: 350000, type: 'quan' },
+      { productId: 1036, brand: 'NI', img: './quan/quan_ni.jpg', name: 'Quần Kaki NI (Slim Tapered)', price: 350000, type: 'quan' },
+      { productId: 1037, brand: 'PM', img: './quan/quan_pm2.jpg', name: 'Quần Tây PM (Crop Tapered)', price: 350000, type: 'quan' },
       { productId: 1038, brand: 'PA', img: './quan/quan_pa.jpg', name: 'Quần Kaki PA (wide fit)', price: 380000, type: 'quan' },
-      { productId: 1039, brand: 'PH', img: './quan/quan_ph.jpg', name: 'Quần kaki PH ( Slimfit )', price: 380000, type: 'quan' },
-      { productId: 1040, brand: 'PA', img: './quan/quan_pa1.jpg', name: 'Quần kaki PA ( wide fit )', price: 380000, type: 'quan' },
-      { productId: 1041, brand: 'AD', img: './quan/quan_ad1.jpg', name: 'Quần Tây AD ( Cool Banding )', price: 380000, type: 'quan' },
-      { productId: 1042, brand: 'PH', img: './quan/quan_ph1.jpg', name: 'Quần Tây PH ( Slim Fit Tapered )', price: 350000, type: 'quan' },
-      { productId: 1043, brand: 'SP', img: './quan/quan_sp2.jpg', name: 'Quần SP ( cargo pants )', price: 400000, type: 'quan' },
-      { productId: 1044, brand: 'PM', img: './quan/quan_pm3.jpg', name: 'Quần Short PM ( Cargo )', price: 280000, type: 'quan' },
-      { productId: 1045, brand: 'CL', img: './quan/quan_cl.jpg', name: 'Quần Short CL ( Banding Slacks )', price: 300000, type: 'quan' },
+      { productId: 1039, brand: 'PH', img: './quan/quan_ph.jpg', name: 'Quần kaki PH (Slimfit)', price: 380000, type: 'quan' },
+      { productId: 1040, brand: 'PA', img: './quan/quan_pa1.jpg', name: 'Quần kaki PA (wide fit)', price: 380000, type: 'quan' },
+      { productId: 1041, brand: 'AD', img: './quan/quan_ad1.jpg', name: 'Quần Tây AD (Cool Banding)', price: 380000, type: 'quan' },
+      { productId: 1042, brand: 'PH', img: './quan/quan_ph1.jpg', name: 'Quần Tây PH (Slim Fit Tapered)', price: 350000, type: 'quan' },
+      { productId: 1043, brand: 'SP', img: './quan/quan_sp2.jpg', name: 'Quần SP (cargo pants)', price: 400000, type: 'quan' },
+      { productId: 1044, brand: 'PM', img: './quan/quan_pm3.jpg', name: 'Quần Short PM (Cargo)', price: 280000, type: 'quan' },
+      { productId: 1045, brand: 'CL', img: './quan/quan_cl.jpg', name: 'Quần Short CL (Banding Slacks)', price: 300000, type: 'quan' },
       { productId: 1046, brand: 'HU', img: './quan/quan_hu.jpg', name: 'Quần Short Linen HU', price: 380000, type: 'quan' },
     ];
     localStorage.setItem('product', JSON.stringify(productArray));
@@ -102,7 +102,7 @@ function changePage(array, n) {
 }
 
 function showProduct() {
-  document.getElementById('title').innerHTML = `Tất Cả Sản Phẩm`;
+  document.getElementById('title').innerHTML = `<h2 class="title-product">Tất Cả Sản Phẩm</h2>`;
   renderProduct(productArray, p);
   renderListPage(productArray);
   changePage(productArray, p);
@@ -149,7 +149,7 @@ searchBtn.addEventListener('click', () => {
     }
   })
   localStorage.setItem('search', JSON.stringify(arraySearch));
-  document.getElementById('title').innerHTML = `<h2 class="title-product">Sản phẩm tìm kiếm<h2/>`;
+  document.getElementById('title').innerHTML = `<h2 class="title-product">Sản Phẩm Tìm Kiếm<h2/>`;
   renderProduct(arraySearch, s);
   renderListPage(arraySearch);
   changePage(arraySearch, s);
