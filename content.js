@@ -51,7 +51,7 @@ function createProduct() {
       { productId: 1038, brand: 'PA', img: './quan/quan_pa.jpg', name: 'Quần Kaki PA (wide fit)', price: 380000, type: 'quan' },
       { productId: 1039, brand: 'PH', img: './quan/quan_ph.jpg', name: 'Quần kaki PH (Slimfit)', price: 380000, type: 'quan' },
       { productId: 1040, brand: 'PA', img: './quan/quan_pa1.jpg', name: 'Quần kaki PA (wide fit)', price: 380000, type: 'quan' },
-      { productId: 1041, brand: 'AD', img: './quan/quan_ad1.jpg', name: 'Quần Tây AD (Cool Banding)', price: 380000, type: 'quan' },
+      { productId: 1041, brand: 'PH', img: './quan/quan_ph2.jpg', name: 'Short PH (Poly)', price: 280000, type: 'quan' },
       { productId: 1042, brand: 'PH', img: './quan/quan_ph1.jpg', name: 'Quần Tây PH (Slim Fit Tapered)', price: 350000, type: 'quan' },
       { productId: 1043, brand: 'SP', img: './quan/quan_sp2.jpg', name: 'Quần SP (cargo pants)', price: 400000, type: 'quan' },
       { productId: 1044, brand: 'PM', img: './quan/quan_pm3.jpg', name: 'Quần Short PM (Cargo)', price: 280000, type: 'quan' },
